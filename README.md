@@ -1,21 +1,21 @@
 Bug reproduction.
 
 ```bash
-git clone git@github.com:hemengke1997/vps-antd-repo
-cd vps-antd-repo/
+git clone git@github.com:hemengke1997/vps0.4.15-cssbug-repo
+cd vps0.4.15-cssbug-repo/
 pnpm install
 pnpm run dev
 ```
 
-Same as single line (copy-paste me):
 
 ```shell
-git clone git@github.com:hemengke1997/vps-antd-repo && cd vps-antd-repo/ && pnpm install && pnpm run start
+git clone git@github.com:hemengke1997/vps0.4.15-cssbug-repo && cd vps-antd-repo/ && pnpm install && pnpm run start
 ```
 
-Got to [localhost:3000](http://localhost:3000) and observe how slow the app starts.
+Got to [localhost:3000](http://localhost:3000), then you will find css asests error from browser
 
-On the following windows machine it takes ~40 seconds for the first start and ~30 seconds for subsequent starts.
+Bug origin: https://github.com/brillout/vite-plugin-ssr/blob/main/vite-plugin-ssr/node/retrievePageAssets.ts#L118
+
 
 ```
 System:
@@ -23,3 +23,4 @@ System:
   CPU: (16) x64 Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz
   Memory: 4.97 GB / 23.78 GB
 ```
+
