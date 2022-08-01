@@ -9,7 +9,7 @@ pnpm run dev
 
 
 ```shell
-git clone git@github.com:hemengke1997/vps0.4.15-cssbug-repo && cd vps-antd-repo/ && pnpm install && pnpm run start
+git clone git@github.com:hemengke1997/vps0.4.15-cssbug-repo && cd vps0.4.15-cssbug-repo/ && pnpm install && pnpm run start
 ```
 
 Got to [localhost:3000](http://localhost:3000), then you will find css asests error from browser
